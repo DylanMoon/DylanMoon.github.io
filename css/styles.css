@@ -11,6 +11,11 @@ ul {
   padding: 0;
 }
 
+h3 a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -47,8 +52,8 @@ ul {
   padding: 1.5em;
   margin-bottom: 1.5em;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 900px; /* Adjust the width as needed */
-  width: 100%; /* Ensure it takes full width up to max-width */
+  max-width: 900px; 
+  width: 100%; 
 }
 
 .card-header {
@@ -70,13 +75,13 @@ ul {
 }
 
 .company-logo img {
-  max-width: 200px; /* Adjust size as needed */
+  max-width: 200px; 
   height: auto;
-  border-radius: 4px; /* Optional: for rounded corners */
+  border-radius: 4px; 
 }
 
 .company-info {
-  flex: 1; /* Allows this to take up remaining space */
+  flex: 1; 
 }
 
 
@@ -102,7 +107,99 @@ ul {
 }
 
 .nested-responsibilities {
-  list-style-type: circle; /* Adjust as needed for nested lists */
+  list-style-type: circle;
   padding-left: 1.5em;
   margin-top: 0.5em;
 }
+
+#projects {
+  background-color: #f9f9f9;
+  padding: 2em;
+}
+
+.project-entry {
+  display: flex;
+  margin-bottom: 2em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-info {
+  flex: 1;
+  padding: 1.5em;
+}
+
+.project-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.project-info .description {
+  margin-top: 0.5em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.project-details {
+  margin-top: 1em;
+  padding-left: 1.5em; /* Adjust for indentation */
+  list-style-type: disc; /* Bullet style */
+  color: #444;
+}
+
+.project-details li {
+  margin-bottom: 0.5em;
+}
+
+.project-media {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Optional: for visual separation */
+}
+
+.project-media img, 
+.project-media video {
+  max-width: 100%;
+  height: auto;
+}
+/* Alternate layout */
+.project-entry.alternate .project-info {
+  order: 2;
+}
+
+.project-entry.alternate .project-media {
+  order: 1;
+}
+
+/* Button styling */
+.project-buttons {
+  margin-top: 1em;
+}
+
+.project-buttons .project-button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  margin-right: 0.5em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.project-buttons .project-button-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.project-buttons .project-button:hover {
+  opacity: 0.5;
+}
+
+

@@ -20,19 +20,19 @@
     <nav>
         <ul>
             <li>
-                <a class="myLinks" href="https://www.linkedin.com/in/moonski" target="_blank" rel="noopener">
+                <a class="myLinks" href="https://www.linkedin.com/in/moonski" target="_blank" rel="noopener noreferrer">
                     <span class="iconify" data-icon="devicon:linkedin"></span>
                     LinkedIn
                 </a>
             </li>
             <li>
-                <a class="myLinks" href="https://www.github.com/DylanMoon" target="_blank" rel="noopener">
+                <a class="myLinks" href="https://www.github.com/DylanMoon" target="_blank" rel="noopener noreferrer">
                     <span class="iconify" data-icon="devicon:github"></span>
                     Github
                 </a>
             </li>
             <li>
-                <a class="myLinks" href="resources/DylanMoonResume.pdf" target="_blank" rel="noreferrer">
+                <a class="myLinks" href="resources/DylanMoonResume.pdf" target="_blank" rel="noopener noreferrer">
                     <span class="iconify" data-icon="carbon:document"></span>
                     Resume
                 </a>
@@ -44,7 +44,9 @@
         <h2>Work Experience</h2>
         <div class="job-card">
             <div class="company-logo">
-                <img src="resources/wms_logo.png" alt="Wms logo">
+                <a href="http://www.wiredms.com" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/wms_logo.png" alt="Wms logo">
+                </a>
             </div>
             <div class="card-content">
                 <div class="card-header">
@@ -63,7 +65,9 @@
         </div>
         <div class="job-card">
             <div class="company-logo">
-                <img src="resources/white-final-arcs-logo-outlined.png" alt="ARCS Logo">
+                <a href="http://www.arcs.center" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/white-final-arcs-logo-outlined.png" alt="ARCS Logo">
+                </a>
             </div>
             <div class="card-content">
                 <div class="card-header">
@@ -108,13 +112,117 @@
         </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects">
         <h2>Projects</h2>
+        <div class="project-entry alternate">
+            <div class="project-info">
+                <h3>Crestron Home Lighting Drivers</h3>
+
+                <p class="description">Drivers that allow Crestron Home to fully integrate with third party systems,
+                    including:
+                <ul class="project-details">
+                    <li>Lutron Homeworks QSX - Ketra</li>
+                    <li>Vantage</li>
+                    <li>Shelly</li>
+                    <li>Colorbeam</li>
+                    <li>Loxone</li>
+                    <li>Big Ass Fans</li>
+                </ul>
+                </p>
+            </div>
+            <div class="project-media">
+                <!-- Replace with <img>, <video>, or <iframe> as needed -->
+                <img src="path-to-your-image.jpg" alt="Project Media">
+                <!-- Example for video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+                <!-- Example for GIF -->
+                <!-- <img src="path-to-your-gif.gif" alt="Project Media"> -->
+            </div>
+        </div>
+        <div class="project-entry">
+            <div class="project-info">
+                <h3>CH Logic</h3>
+                <p class="description">Extension driver for Crestron Home that utilizes lua scripts to control and
+                    action off of almost anything in the Crestron Home ecosystem. This has given users and integrators
+                    the ability to do almost anything they can dream up. Being based on lua scripts, they can be
+                    modified, loaded, and unloaded at runtime. The scripts are generated using a custom gui.</p>
+            </div>
+            <div class="project-media">
+                <!-- Replace with <img>, <video>, or <iframe> as needed -->
+                <img src="path-to-your-image.jpg" alt="Project Media">
+                <!-- Example for video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+                <!-- Example for GIF -->
+                <!-- <img src="path-to-your-gif.gif" alt="Project Media"> -->
+            </div>
+        </div>
+        <div class="project-entry alternate">
+            <div class="project-info">
+                <h3>
+                Cake
+                </h3>
+                <p class="description">
+                    Worked with Warm Apple Pie to develop a new containerized home automation framework. It is able to scale horizontally to mmeet the needs of any sized installation. Data persistence is a PostGreSQL database that can be modified and maintained through the configuration API that was built around it or pgAdmin.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://www.warmapplepie.com" target="_blank" rel="noopener noreferrer" class="project-button">Cake</a>
+                </div>
+            </div>
+            <div class="project-media">
+                <!-- Replace with <img>, <video>, or <iframe> as needed -->
+                <img src="path-to-your-image.jpg" alt="Project Media">
+                <!-- Example for video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+                <!-- Example for GIF -->
+                <!-- <img src="path-to-your-gif.gif" alt="Project Media"> -->
+            </div>
+        </div>
+        <div class="project-entry">
+            <div class="project-info">
+                <h3>dotNet Color</h3>
+                <p class="description">Brief description of the project, outlining key features, goals, and technologies
+                    used.</p>
+                    <div class="project-buttons">
+                        <a href="https://www.github.com/DylanMoon/dotNetColor" target="_blank" rel="noopener noreferrer" class="project-button">Code</a>
+                    </div>
+            </div>
+            <div class="project-media">
+                <!-- Replace with <img>, <video>, or <iframe> as needed -->
+                <img src="path-to-your-image.jpg" alt="Project Media">
+                <!-- Example for video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+                <!-- Example for GIF -->
+                <!-- <img src="path-to-your-gif.gif" alt="Project Media"> -->
+            </div>
+        </div>
+        <div class="project-entry alternate">
+            <div class="project-info">
+                <h3>Budgeting App</h3>
+                <p class="description">
+                    In my senior design class I was part of a group that developed a cross platform budgeting app. The app encourages the user to set a budget and track expenses. A mobile and web version were made that share a common backend so all data will be synced. I worked on the database and backend API.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://www.github.com/DylanMoon/COMP490" target="_blank" rel="noopener noreferrer" class="project-button">Backend Code</a>
+                    <a href="https://www.github.com/edenrosales/GitMuney" target="_blank" rel="noopener noreferrer" class="project-button">Frontend Code</a>
+                </div>
+            </div>
+            <div class="project-media">
+                <!-- Replace with <img>, <video>, or <iframe> as needed -->
+                <img src="path-to-your-image.jpg" alt="Project Media">
+                <!-- Example for video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+                <!-- Example for GIF -->
+                <!-- <img src="path-to-your-gif.gif" alt="Project Media"> -->
+            </div>
+        </div>
     </section>
+
     <section id="about" class="about">
         <h2>About</h2>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
 </body>
 
 </html>
