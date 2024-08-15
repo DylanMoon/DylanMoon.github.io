@@ -6,8 +6,8 @@ body {
 }
 
 ul {
-  list-style-type: none;
-  text-align: center;
+  list-style-type: circle;
+  text-align: left;
   padding: 0;
 }
 
@@ -28,4 +28,81 @@ ul {
 .myLinks::after {
   content: "";
   position: absolute;
+}
+
+#work-experience {
+  background-color: #f9f9f9;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Adjust the width as needed */
+  width: 100%; /* Ensure it takes full width up to max-width */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.company-logo {
+  margin: 1em;
+  background-color: #333;
+  max-width: fit-content;
+  border-radius: 4px;
+}
+
+.company-logo img {
+  max-width: 200px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 4px; /* Optional: for rounded corners */
+}
+
+.company-info {
+  flex: 1; /* Allows this to take up remaining space */
+}
+
+
+.company-name {
+  font-size: 1em;
+  color: #555;
+}
+
+.term {
+  font-style: italic;
+  color: #777;
+  margin: 0.5em 0;
+}
+
+.responsibilities {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+.responsibilities li {
+  margin-bottom: 0.5em;
+}
+
+.nested-responsibilities {
+  list-style-type: circle; /* Adjust as needed for nested lists */
+  padding-left: 1.5em;
+  margin-top: 0.5em;
 }
