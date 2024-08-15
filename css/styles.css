@@ -5,6 +5,12 @@ body {
   background-color: var(--background-color);
 }
 
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -13,11 +19,6 @@ body {
   border-radius: 8px;
 }
 
-ul {
-  list-style-type: none;
-  text-align: left;
-  padding: 0;
-}
 
 .myLinks {
   display: inline-block;
