@@ -205,7 +205,13 @@ h3 a{
   position: relative;
 }
 
-.project-media img, 
+.project-media img {
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+  object-fit: cover;
+}
+
 .project-media video {
   max-width: 100%;
   height: auto;
@@ -225,19 +231,21 @@ h3 a{
   width: 100%;
   height: 500px;
   overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-stack img {
   position: absolute; 
+  max-height: 100%;
   width: auto; 
-  height: 100%; 
-  top: 0; 
-  left: 0; 
-  overflow: visible;
+  height: auto; 
+  overflow: hidden;
 }
 
 .image-foreground {
-  left: 38.5rem !important;
+  left: 65%;
   transform: translateY(15%);
   z-index: 2;
 }
