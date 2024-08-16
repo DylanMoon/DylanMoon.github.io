@@ -1,9 +1,89 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   background-color: var(--background-color);
 }
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+main{
+  flex: 1;
+}
+
+header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--nav-bg-color);
+  z-index: 9999;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  font-size: 1.5rem;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav .iconify {
+  margin-right: 2px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+img {
+  max-height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: calc(20px + 0.75rem) 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  overflow: visible;
+  min-height: 100vh;
+}
+
 
 ul {
   list-style-type: circle;
@@ -16,15 +96,6 @@ h3 a{
   color: inherit;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-}
-
-
 .myLinks {
   display: inline-block;
   position: relative;
@@ -36,6 +107,7 @@ h3 a{
 }
 
 #work-experience {
+  padding-top: 80px !important;
   background-color: #f9f9f9;
   padding: 2rem;
   display: flex;
@@ -239,14 +311,15 @@ h3 a{
 .image-stack img {
   position: absolute; 
   max-height: 100%;
+  max-width: 100%;
   width: auto; 
   height: auto; 
   overflow: hidden;
 }
 
 .image-foreground {
-  left: 65%;
-  transform: translateY(15%);
+  left: 60%;
+  transform: translate(-10%,15%);
   z-index: 2;
 }
 
