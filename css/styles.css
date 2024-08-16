@@ -37,10 +37,24 @@ h3 a{
 
 #work-experience {
   background-color: #f9f9f9;
-  padding: 2em;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#work-experience h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0; 
+  padding-bottom: 1.5rem;
+  color: #333;
+}
+
+.work-experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers children horizontally */
 }
 
 .job-card {
@@ -49,8 +63,8 @@ h3 a{
   border-radius: 8px;
   display: flex;
   align-items: flex-start;
-  padding: 1.5em;
-  margin-bottom: 1.5em;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   max-width: 900px; 
   width: 100%; 
@@ -59,7 +73,7 @@ h3 a{
 .card-header {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .card-header h3 {
@@ -68,8 +82,8 @@ h3 a{
 }
 
 .company-logo {
-  margin: 1em;
-  background-color: #333;
+  margin: 1rem;
+  background-color: #333333;
   max-width: fit-content;
   border-radius: 4px;
 }
@@ -86,72 +100,99 @@ h3 a{
 
 
 .company-name {
-  font-size: 1em;
+  font-size: 1rem;
   color: #555;
 }
 
 .term {
   font-style: italic;
   color: #777;
-  margin: 0.5em 0;
+  margin: 0.5rem 0;
 }
 
 .responsibilities {
   list-style-type: disc;
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
   margin: 0;
 }
 
 .responsibilities li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .nested-responsibilities {
   list-style-type: circle;
-  padding-left: 1.5em;
-  margin-top: 0.5em;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nested-responsibilities li{
+  width: 50%;
+  margin-bottom: 0.5rem;
 }
 
 #projects {
   background-color: #f9f9f9;
-  padding: 2em;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0; 
+  padding-bottom: 1.5rem;
+  color: #333;
+}
+
+.project-content{
+  margin: 0;
 }
 
 .project-entry {
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-info {
   flex: 1;
-  padding: 1.5em;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-info h3 {
   margin: 0;
   color: #333;
+  font-size: 1.75rem;
 }
 
 .project-info .description {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   color: #555;
   line-height: 1.6;
 }
 
 .project-details {
-  margin-top: 1em;
-  padding-left: 1.5em; /* Adjust for indentation */
+  margin-top: 1rem;
+  padding-left: 1.5rem; /* Adjust for indentation */
   list-style-type: disc; /* Bullet style */
   color: #444;
 }
 
 .project-details li {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .project-media {
@@ -160,12 +201,15 @@ h3 a{
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0; /* Optional: for visual separation */
+  max-height: 500px;
+  position: relative;
 }
 
 .project-media img, 
 .project-media video {
   max-width: 100%;
   height: auto;
+  overflow: visible;
 }
 /* Alternate layout */
 .project-entry.alternate .project-info {
@@ -176,20 +220,46 @@ h3 a{
   order: 1;
 }
 
+.image-stack {
+  position: relative; 
+  width: 100%;
+  height: 500px;
+  overflow: visible;
+}
+
+.image-stack img {
+  position: absolute; 
+  width: auto; 
+  height: 100%; 
+  top: 0; 
+  left: 0; 
+  overflow: visible;
+}
+
+.image-foreground {
+  left: 38.5rem !important;
+  transform: translateY(15%);
+  z-index: 2;
+}
+
+.image-bg {
+  z-index: 1;
+}
+
 /* Button styling */
 .project-buttons {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .project-buttons .project-button {
   display: inline-block;
-  padding: 0.75em 1.5em;
-  margin-right: 0.5em;
+  padding: 0.75rem 1.5rem;
+  margin-right: 0.5rem;
   border: none;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -202,4 +272,18 @@ h3 a{
   opacity: 0.5;
 }
 
+#about{
+  background-color: #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0; 
+  padding-bottom: 1.5rem;
+  color: #333;
+}
