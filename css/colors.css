@@ -1,5 +1,9 @@
 :root {
-  --background-color: #afafaf;
-  --nav-bg-color: #283b52;
-  --text-color: #0f0f0f;
+  --background-color: #2a2a2a;
+  --nav-bg-color: #1741ff33;
+  --text-color: #ffffff;
+  --card-color-bg: #838383;
+  --card-color-border: #1c1c1c;
+  --header-color: #000000;
+  --term-color: #e4e4e4;
 }
