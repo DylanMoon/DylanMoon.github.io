@@ -69,6 +69,20 @@ footer {
   bottom: 0;
 }
 
+footer ul{
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+footer li{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 img {
   max-height: 100%;
 }
@@ -131,13 +145,13 @@ h3 a{
 
 .job-card {
   background-color: var(--card-color-bg);
-  border: 2px solid var(--card-color-border);
+  /* border: 2px solid var(--card-color-border); */
   border-radius: 8px;
   display: flex;
   align-items: center;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
   max-width: 900px; 
   width: 100%; 
 }
@@ -230,10 +244,10 @@ h3 a{
   margin-bottom: 4rem;
   margin-top: 4rem;
   background-color: #fff;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   border-radius: 8px;
   overflow: visible;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
 }
 
 .project-info {
@@ -275,6 +289,7 @@ h3 a{
   background-color: #f0f0f0; /* Optional: for visual separation */
   max-height: 500px;
   position: relative;
+  border-radius: 10px;
 }
 
 .project-media img {
@@ -282,6 +297,7 @@ h3 a{
   height: auto;
   overflow: visible;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .project-media video {
