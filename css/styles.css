@@ -353,12 +353,15 @@ h3 a{
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin-right: 0.5rem;
-  border: none;
-  border-radius: 5px;
+  border: 2px;
+  border-color: var(--card-border-color);
+  border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
 }
 
 
@@ -384,9 +387,9 @@ h3 a{
 
 
 .skills {
-  background: var(--card-bg-color);
-  border-radius: 8px;
-  box-shadow: 15px 15px 15px var(--box-shadow-color);
+  background: var(--background-color);
+  /* border-radius: 8px; */
+  /* box-shadow: 15px 15px 15px var(--box-shadow-color); */
   margin-bottom: 75px;
   padding: 20px;
   display: flex;
@@ -416,12 +419,12 @@ h3 a{
   align-items: center;
   margin-bottom: 10px;
   /* border: 4px solid var(--card-border-color); */
-  border-radius: 8px;
+  border-radius: 30%;
   box-shadow: 0 0 15px var(--box-shadow-color);
   position: relative;
   padding-top: 100%;
   box-sizing: border-box;
-  background-color: var(--subcard-bg-color);
+  background-color: var(--skill-bg-color);
 }
 
 .skill-entry:hover{
@@ -441,6 +444,11 @@ h3 a{
   margin-bottom: 10px;
 }
 
+.skill-name{
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 1px 1px 2px black,-1px -1px 2px black;
+}
 
 .education {
   background: var(--background-color);
