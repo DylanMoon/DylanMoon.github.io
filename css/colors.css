@@ -11,7 +11,8 @@
   --box-shadow-color: #000000bf;
   --icon-color: #eeeeee;
   --subcard-bg-color: #FFFFFF;
-  --button-bg-color: #acacac;
-  --button-text-color: #003f61;
+  --button-bg-color: #5c5c5c;
+  --button-bg-hover: #303030;
+  --button-text-color: #d8d8d8;
   --skill-bg-color: #333333;
 }

@@ -366,7 +366,10 @@ h3 a{
 
 
 .project-buttons .project-button:hover {
-  opacity: 0.5;
+  background-color: var(--button-bg-hover);
+  scale: 110%;
+  transition: 250ms;
+  z-index: 500;
 }
 
 #about{
